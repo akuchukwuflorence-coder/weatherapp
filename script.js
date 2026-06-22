@@ -24,18 +24,16 @@ searchBtn.addEventListener("click", function () {
 
   getWeather(city);
 });
-function getWeather(city) {
-  message.textContent = "Loading...";
+async function getWeather(city) {
+  try {
+    message.textContent = "Loading...";
 
   // First API: get latitude and longitude of the city
-  const geoUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=1`;
-}
-    fetch(geoUrl)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (geoData) {
-      if (!geoData.results) {
+    const geoUrl = 
+  `https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=1`;
+    const geoResponse = await fetch(geoUrl);
+    const geoData = await geoResponse.json();
+    if (!geoData.results) {
         throw new error("City not found.");
       }
 
@@ -52,13 +50,17 @@ function getWeather(city) {
       + 
       `&timezone=auto`;
       
-      return fetch(weatherUrl);
-    })
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      message.textContent = "";
+      const weatherResponse = await
+      fetch(weatherUrl);
+      const weatherData = await
+      weatherResponse.json();
+      
+      console.log(weatherData);
+      message.textContent = "Weather loaded successfully!";
+  } catch (error) { 
+      message.textContent = error.message;
+    }
+}
 
       const current = data.current;
 
@@ -72,10 +74,6 @@ function getWeather(city) {
       weatherIcon.textContent = getWeatherIcon(current.weather_code);
       uvIndex.textContent = getUvLevel(current.uv_index);
       displayForecast(data.daily);
-    })
-    .catch(function (error) {
-      message.textContent = error.message;
-    });
 
 function displayForecast(daily) {
   forecast.innerHTML = "";

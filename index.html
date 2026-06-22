@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="top-bar">
+        <h2>🌫️ Weather App</h2>
+    </div>
+    
+    <div class="search-area">
+      <input type="text" id="cityInput" placeholder="Lagos" />
+      <button id="searchBtn">Search</button>
+    </div>
+    <p id="message"></p>
+    <div class="main-weather">
+        <div id="weatherIcon" class="icon">☀️</div>
+        <h3 id="location">Lagos, Nigeria</h3>
+        <h1 id="temperature">32℃</h1>
+        <p>
+            <span id="condition">Sunny</span> . Feels like <span id="feelsLike">36℃</span>
+        </p>    
+    </div>
+    <div class="details">
+        <div>
+            <p>Humidity</p>
+            <h4 id="humidity">78%</h4>
+        </div>
+        <div>
+            <p>Wind</p>
+            <h4 id="wind">14 km/h</h4>
+        </div>
+        <div>
+            <p>UV Index</p>
+            <h4 id="uvindex">High</h4>
+        </div>
+    </div>
+    <h4 class="forecast-title">5-DAYS FORECAST</h4>
+    <div id="forecast" class="forecast"></div>
+        <div class="day">
+            <strong>Today</strong>
+            <span>&#9728</span>
+            <p><b>34&deg;</b><br>27&deg;</p>
+        </div>
+        <div class="day">
+            <strong>Tuesday</strong>
+            <span>☁️</span>
+            <p><b>31&deg;</b><br>25&deg;</p>
+        </div>
+        <div class="day">
+            <strong>Wednesday</strong>
+            <span>🌧️</span>
+            <p><b>28&deg;</b><br>24&deg;</p>
+        </div>
+
+        <div class="day">
+            <strong>Thursday</strong>
+            <span>🌧️</span>
+            <p><b>27&deg;</b><br>23&deg;</p>
+        </div>
+
+        <div class="day">
+            <strong>Friday</strong>
+            <span>&#9728</span>
+            <p><b>33&deg;</b><br>26&deg;</p>
+        </div>      
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

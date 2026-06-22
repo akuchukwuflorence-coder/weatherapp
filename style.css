@@ -1,0 +1,200 @@
+CSS
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e9eef0;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+/* Main container */
+.app {
+  width: 360px;
+  background-color: #f4f4f4;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.top-bar {
+  background-color: #1A3C5E;
+  color: white;
+  padding: 18px;
+}
+
+.top-bar h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.search-area {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background-color: #e5e5e5;
+}
+
+.search-area input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.search-area button {
+  padding: 12px 18px;
+  background-color: #2E86AB;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-area button:hover {
+  Background-color: #0d47a1;
+}
+
+.main-weather {
+  background-color: #2E7890;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 25px 10px;
+  border-radius: 12px;
+}
+
+.icon {
+  font-size: 35px;
+}
+
+.main-weather h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.main-weather h1 {
+  margin: 5px 0;
+  font-size: 48px;
+}
+
+.main-weather p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.details {
+  display: flex;
+  margin: 10px;
+  background-color: #eeeeee;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.details div {
+  flex: 1;
+  text-align: center;
+  padding: 12px 5px;
+  border-right: 1px solid #ccc;
+}
+
+.details div:last-child {
+  border-right: none;
+}
+
+.details p {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+}
+
+.details h4 {
+  margin: 6px 0 0;
+  color: #1A3C5E;
+}
+
+.forecast-title {
+  margin: 15px 12px 8px;
+  color: #555;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.forecast {
+  padding: 0 10px 20px;
+}
+
+.forecast-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  margin-bottom: 8px;
+  padding: 14px;
+  border-radius: 12px;
+}
+
+.forecast-row .day {
+  font-weight: bold;
+  color: #1A3C5E;
+  width: 100px;
+}
+
+.forecast-row .small-icon {
+  font-size: 20px;
+}
+
+.forecast-row .temp {
+  color: #1A3C5E;
+  font-weight: bold;
+}
+
+#message {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin: 5px;
+}
+
+h2 {
+  margin: 18px 12px 10px;
+  color: #555;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.forecast {
+  padding: 0 12px 25px;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 14px 12px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+.day strong {
+  color: #1A3C5E;
+}
+
+.day span {
+  font-size: 22px;
+}
+
+.day p {
+  color: #555;
+  line-height: 1.4;
+}
+
+
+
+

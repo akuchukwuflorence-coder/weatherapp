@@ -18,4 +18,4 @@ use of Open-Meteo was implemented by using it to get the city cordinate and fetc
 - Fetch API
 
 #Author
-Florence Ndubuisi
+- Florence Ndubuisi

@@ -1,3 +1,4 @@
+// get elements by id
 const cityInput = document.getElementById("cityInput");
 const searchBtn = document.getElementById("searchBtn");
 const message = document.getElementById("message");
@@ -13,6 +14,7 @@ const uvIndex = document.getElementById("uvIndex");
 const weatherIcon = document.getElementById("weatherIcon");
 const forecast = document.getElementById("forecast");
 
+// Attend to Events in html with a place holder
 searchBtn.addEventListener("click", function () {
   const city = cityInput.value.trim();
 
@@ -22,6 +24,7 @@ searchBtn.addEventListener("click", function () {
     return;
   }
 
+  // fetch city coordinates using the Geocoding API
   getWeather(city);
 });
 async function getWeather(city) {

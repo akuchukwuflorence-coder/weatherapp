@@ -1,21 +1,21 @@
-Title - Weather App
+#Title - Weather App
 
-Description - 
+#Description - 
 A weather application built with HTML, CSS and Javascript. 
 use of Open-Meteo was implemented by using it to get the city cordinate and fetch weather data
 
-Features
+#Features
 - Search for any city
 - Displays current temperature
 - Shows humidity
 - Shows wind speed
 - Uses real-time weather data from OpenWeather API
 
-Technologies Used
+#Technologies Used
 - HTML
 - CSS
 - Javascript
 - Fetch API
 
-Author
+#Author
 Florence Ndubuisi
